@@ -23,6 +23,7 @@ async def on_message(message):
         return
     
     if message.content == "p!translate":
+        await message.channel.send('OK')
 
         if client.user in message.mentions: # @判定
             translator = googletrans.Translator()
